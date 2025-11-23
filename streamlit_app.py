@@ -21,7 +21,7 @@ st.title("Citibikes NYC – Análisis de demanda por hora (Septiembre 2021)")
 def get_firestore_client():
     key_dict = json.loads(st.secrets["textkey"])
     creds = service_account.Credentials.from_service_account_info(key_dict)
-    return firestore.Client(credentials=creds, project="citibike")
+    return firestore.Client(credentials=creds, project="citibike-bdcdc")
 
 
 # ----------------------------------------------------------
